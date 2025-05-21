@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1684591713 source:c:\users\14ver\onedrive\desktop\scuola\informatica\progetti\blackjackfinal_project\lib.c
+	"lib.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+
+1684591747 c:\users\14ver\onedrive\desktop\scuola\informatica\progetti\blackjackfinal_project\lib.h
+	"conio2.h"
+
+1684591707 c:\users\14ver\onedrive\desktop\scuola\informatica\progetti\blackjackfinal_project\conio2.h
+	<conio.h>
+
+1684591740 source:c:\users\14ver\onedrive\desktop\scuola\informatica\progetti\blackjackfinal_project\main.c
+	"lib.h"
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+

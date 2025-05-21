@@ -1,0 +1,156 @@
+\doxysection{lib.\+h File Reference}
+\hypertarget{lib_8h}{}\label{lib_8h}\index{lib.h@{lib.h}}
+{\ttfamily \#include \"{}conio2.\+h\"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_carte}{Carte}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{lib_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}{INF}}~1
+\item 
+\#define \mbox{\hyperlink{lib_8h_aaa821c1b90884150e64661c7df312f38}{SUP}}~13
+\item 
+\#define \mbox{\hyperlink{lib_8h_ad68eed0f1bf99feb9bbabb1c44ae2112}{LIB\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{lib_8h_a2578577e131a6943d968dbcd87a59d1d}{SOGLIA}}~21
+\item 
+\#define \mbox{\hyperlink{lib_8h_a8adab8170ac5cad4231bfadef08da763}{NUM\+\_\+\+CARTE}}~12
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{lib_8h_af67e8ffbd3de0d03e15cef9c024ff760}{get\+Rand}} (int inf, int sup)
+\item 
+int \mbox{\hyperlink{lib_8h_ae83fcdbeb2b6757fc741ae953b633ee1}{menu}} ()
+\item 
+void \mbox{\hyperlink{lib_8h_a380cee9e58dd3b72a7aaae14bc92e62d}{print\+Regolamento}} ()
+\item 
+void \mbox{\hyperlink{lib_8h_a648476508884c00e949a914f02f1efd0}{make\+Card}} (\mbox{\hyperlink{struct_carte}{Carte}} cards)
+\item 
+int \mbox{\hyperlink{lib_8h_ae1e19f839e32d825656d4a4eea3b992f}{get\+Carta}} (int \texorpdfstring{$\ast$}{*}som\+Utente, \mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}one\+Card)
+\item 
+void \mbox{\hyperlink{lib_8h_a756208b21a7a4a9c8bfe8587c32eba07}{draw\+Table}} (int bet, int soldi)
+\item 
+void \mbox{\hyperlink{lib_8h_a8919cf830205ae87422273254962c22e}{draw\+Multiple\+Cards}} (int num\+Carte, \mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}cards)
+\item 
+void \mbox{\hyperlink{lib_8h_ae399a21a71c1889c0beae5f6aec966b6}{stampa\+Numero}} (\mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}card)
+\item 
+void \mbox{\hyperlink{lib_8h_ab8f903d1b96eff9f7f130ab52f166e67}{print\+One\+Card}} (int i, int j, \mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}cards)
+\item 
+void \mbox{\hyperlink{lib_8h_a0ef8de67a71ddbe6bd17b4664c0c420c}{get\+Cash\+In}} (int \texorpdfstring{$\ast$}{*}cash)
+\item 
+void \mbox{\hyperlink{lib_8h_afb92e5718ae767cff8082e2ff02a302b}{stampa\+Cornice}} (int c, int i, int j, int dim\+\_\+i, int dim\+\_\+j, \mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}cards)
+\item 
+void \mbox{\hyperlink{lib_8h_addafa407b483bdd14b66dd4551778ac4}{stampa\+Guadagno}} (int soldi, int somma\+Cariche\+Fatte, int flag)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{lib_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{lib_8h_a12c2040f25d8e3a7b9e1c2024c618cb6} 
+\index{lib.h@{lib.h}!INF@{INF}}
+\index{INF@{INF}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{INF}{INF}}
+{\footnotesize\ttfamily \#define INF~1}
+
+\Hypertarget{lib_8h_ad68eed0f1bf99feb9bbabb1c44ae2112}\label{lib_8h_ad68eed0f1bf99feb9bbabb1c44ae2112} 
+\index{lib.h@{lib.h}!LIB\_H@{LIB\_H}}
+\index{LIB\_H@{LIB\_H}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{LIB\_H}{LIB\_H}}
+{\footnotesize\ttfamily \#define LIB\+\_\+H}
+
+\Hypertarget{lib_8h_a8adab8170ac5cad4231bfadef08da763}\label{lib_8h_a8adab8170ac5cad4231bfadef08da763} 
+\index{lib.h@{lib.h}!NUM\_CARTE@{NUM\_CARTE}}
+\index{NUM\_CARTE@{NUM\_CARTE}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_CARTE}{NUM\_CARTE}}
+{\footnotesize\ttfamily \#define NUM\+\_\+\+CARTE~12}
+
+\Hypertarget{lib_8h_a2578577e131a6943d968dbcd87a59d1d}\label{lib_8h_a2578577e131a6943d968dbcd87a59d1d} 
+\index{lib.h@{lib.h}!SOGLIA@{SOGLIA}}
+\index{SOGLIA@{SOGLIA}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{SOGLIA}{SOGLIA}}
+{\footnotesize\ttfamily \#define SOGLIA~21}
+
+\Hypertarget{lib_8h_aaa821c1b90884150e64661c7df312f38}\label{lib_8h_aaa821c1b90884150e64661c7df312f38} 
+\index{lib.h@{lib.h}!SUP@{SUP}}
+\index{SUP@{SUP}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{SUP}{SUP}}
+{\footnotesize\ttfamily \#define SUP~13}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{lib_8h_a8919cf830205ae87422273254962c22e}\label{lib_8h_a8919cf830205ae87422273254962c22e} 
+\index{lib.h@{lib.h}!drawMultipleCards@{drawMultipleCards}}
+\index{drawMultipleCards@{drawMultipleCards}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{drawMultipleCards()}{drawMultipleCards()}}
+{\footnotesize\ttfamily void draw\+Multiple\+Cards (\begin{DoxyParamCaption}\item[{int}]{num\+Carte,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}}]{cards }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_a756208b21a7a4a9c8bfe8587c32eba07}\label{lib_8h_a756208b21a7a4a9c8bfe8587c32eba07} 
+\index{lib.h@{lib.h}!drawTable@{drawTable}}
+\index{drawTable@{drawTable}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{drawTable()}{drawTable()}}
+{\footnotesize\ttfamily void draw\+Table (\begin{DoxyParamCaption}\item[{int}]{bet,  }\item[{int}]{soldi }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_ae1e19f839e32d825656d4a4eea3b992f}\label{lib_8h_ae1e19f839e32d825656d4a4eea3b992f} 
+\index{lib.h@{lib.h}!getCarta@{getCarta}}
+\index{getCarta@{getCarta}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{getCarta()}{getCarta()}}
+{\footnotesize\ttfamily int get\+Carta (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{som\+Utente,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}}]{one\+Card }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_a0ef8de67a71ddbe6bd17b4664c0c420c}\label{lib_8h_a0ef8de67a71ddbe6bd17b4664c0c420c} 
+\index{lib.h@{lib.h}!getCashIn@{getCashIn}}
+\index{getCashIn@{getCashIn}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{getCashIn()}{getCashIn()}}
+{\footnotesize\ttfamily void get\+Cash\+In (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{cash }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_af67e8ffbd3de0d03e15cef9c024ff760}\label{lib_8h_af67e8ffbd3de0d03e15cef9c024ff760} 
+\index{lib.h@{lib.h}!getRand@{getRand}}
+\index{getRand@{getRand}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{getRand()}{getRand()}}
+{\footnotesize\ttfamily int get\+Rand (\begin{DoxyParamCaption}\item[{int}]{inf,  }\item[{int}]{sup }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_a648476508884c00e949a914f02f1efd0}\label{lib_8h_a648476508884c00e949a914f02f1efd0} 
+\index{lib.h@{lib.h}!makeCard@{makeCard}}
+\index{makeCard@{makeCard}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{makeCard()}{makeCard()}}
+{\footnotesize\ttfamily void make\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{cards }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_ae83fcdbeb2b6757fc741ae953b633ee1}\label{lib_8h_ae83fcdbeb2b6757fc741ae953b633ee1} 
+\index{lib.h@{lib.h}!menu@{menu}}
+\index{menu@{menu}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily int menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_ab8f903d1b96eff9f7f130ab52f166e67}\label{lib_8h_ab8f903d1b96eff9f7f130ab52f166e67} 
+\index{lib.h@{lib.h}!printOneCard@{printOneCard}}
+\index{printOneCard@{printOneCard}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{printOneCard()}{printOneCard()}}
+{\footnotesize\ttfamily void print\+One\+Card (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}}]{cards }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_a380cee9e58dd3b72a7aaae14bc92e62d}\label{lib_8h_a380cee9e58dd3b72a7aaae14bc92e62d} 
+\index{lib.h@{lib.h}!printRegolamento@{printRegolamento}}
+\index{printRegolamento@{printRegolamento}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{printRegolamento()}{printRegolamento()}}
+{\footnotesize\ttfamily void print\+Regolamento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_afb92e5718ae767cff8082e2ff02a302b}\label{lib_8h_afb92e5718ae767cff8082e2ff02a302b} 
+\index{lib.h@{lib.h}!stampaCornice@{stampaCornice}}
+\index{stampaCornice@{stampaCornice}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{stampaCornice()}{stampaCornice()}}
+{\footnotesize\ttfamily void stampa\+Cornice (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{dim\+\_\+i,  }\item[{int}]{dim\+\_\+j,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}}]{cards }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_addafa407b483bdd14b66dd4551778ac4}\label{lib_8h_addafa407b483bdd14b66dd4551778ac4} 
+\index{lib.h@{lib.h}!stampaGuadagno@{stampaGuadagno}}
+\index{stampaGuadagno@{stampaGuadagno}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{stampaGuadagno()}{stampaGuadagno()}}
+{\footnotesize\ttfamily void stampa\+Guadagno (\begin{DoxyParamCaption}\item[{int}]{soldi,  }\item[{int}]{somma\+Cariche\+Fatte,  }\item[{int}]{flag }\end{DoxyParamCaption})}
+
+\Hypertarget{lib_8h_ae399a21a71c1889c0beae5f6aec966b6}\label{lib_8h_ae399a21a71c1889c0beae5f6aec966b6} 
+\index{lib.h@{lib.h}!stampaNumero@{stampaNumero}}
+\index{stampaNumero@{stampaNumero}!lib.h@{lib.h}}
+\doxysubsubsection{\texorpdfstring{stampaNumero()}{stampaNumero()}}
+{\footnotesize\ttfamily void stampa\+Numero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} \texorpdfstring{$\ast$}{*}}]{card }\end{DoxyParamCaption})}
+

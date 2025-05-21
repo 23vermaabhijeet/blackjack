@@ -1,0 +1,622 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.20)  20 MAY 2023 16:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./annotated.tex
+(annotated.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-03-30>
+! Undefined control sequence.
+l.1 \doxysection
+                {Data Structures}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \doxysection{D
+                  ata Structures}
+? 
+Missing character: There is no D in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.2 ...e data structures with brief descriptions\+
+                                                  :\begin{DoxyCompactList}
+? 
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactList undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...rief descriptions\+:\begin{DoxyCompactList}
+                                                  
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \item\contentsline
+                      {section}{\mbox{\hyperlink{struct_carte}{Carte}} }{\pa...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {struct_carte}{Carte}
+l.3 ..._carte}{Carte}} }{\pageref{struct_carte}}{}
+                                                  
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.3 ..._carte}{Carte}} }{\pageref{struct_carte}}{}
+                                                  
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+! Extra }, or forgotten $.
+<argument> \hyperlink {struct_carte}
+                                    {Carte}
+l.3 ..._carte}{Carte}} }{\pageref{struct_carte}}{}
+                                                  
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.3 ..._carte}{Carte}} }{\pageref{struct_carte}}{}
+                                                  
+? 
+! Extra }, or forgotten $.
+\contentsline ...n {#4}\csname l@#1\endcsname {#2}
+                                                  {#3}
+l.3 ..._carte}{Carte}} }{\pageref{struct_carte}}{}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...erence `struct_carte' on page \thepage 
+                                                  \space undefined\on@line .
+l.3 ..._carte}{Carte}} }{\pageref{struct_carte}}{}
+                                                  
+? 
+
+LaTeX Warning: Reference `struct_carte' on page  undefined on input line 3.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item
+         \contentsline{section}{\mbox{\hyperlink{structchar__info}{char\+\_\...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item\contentsline
+                      {section}{\mbox{\hyperlink{structchar__info}{char\+\_\...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item\contentsline
+                      {section}{\mbox{\hyperlink{structchar__info}{char\+\_\...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item\contentsline
+                      {section}{\mbox{\hyperlink{structchar__info}{char\+\_\...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {structchar__info}{char\+\_\+info}
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+! Undefined control sequence.
+<argument> \hyperlink {structchar__info}{char\+
+                                               \_\+info}
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+! Undefined control sequence.
+<argument> ...erlink {structchar__info}{char\+\_\+
+                                                  info}
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+! Extra }, or forgotten $.
+\contentsline ...n {#4}\csname l@#1\endcsname {#2}
+                                                  {#3}
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...ce `structchar__info' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...+\_\+info}} }{\pageref{structchar__info}}{}
+                                                  
+? 
+
+LaTeX Warning: Reference `structchar__info' on page  undefined on input line 4.
+
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item
+         \contentsline{section}{\mbox{\hyperlink{structtext__info}{text\+\_\...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtext__info}{text\+\_\...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtext__info}{text\+\_\...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtext__info}{text\+\_\...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item\contentsline
+                      {section}{\mbox{\hyperlink{structtext__info}{text\+\_\...
+
+? 
+! Undefined control sequence.
+<argument> \hyperlink 
+                      {structtext__info}{text\+\_\+info}
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+! Undefined control sequence.
+<argument> \hyperlink {structtext__info}{text\+
+                                               \_\+info}
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+! Undefined control sequence.
+<argument> ...erlink {structtext__info}{text\+\_\+
+                                                  info}
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+! Extra }, or forgotten $.
+\contentsline ...n {#4}\csname l@#1\endcsname {#2}
+                                                  {#3}
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...ce `structtext__info' on page \thepage 
+                                                  \space undefined\on@line .
+l.5 ...+\_\+info}} }{\pageref{structtext__info}}{}
+                                                  
+? 
+
+LaTeX Warning: Reference `structtext__info' on page  undefined on input line 5.
+
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactList}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.6 \end{DoxyCompactList}
+                         
+? 
+)
+*
+
+Overfull \hbox (213.98172pt too wide) in paragraph at lines 3--0
+[] 
+ []
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\end
+
+*
+Runaway argument?
+! Paragraph ended before \end  was complete.
+<to be read again> 
+                   \par 
+<*> 
+    
+? end
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*pdflatex
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> p
+     dflatex
+? 

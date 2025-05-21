@@ -1,0 +1,155 @@
+\doxysection{conio2.\+h}
+\hypertarget{conio2_8h_source}{}\label{conio2_8h_source}\mbox{\hyperlink{conio2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ \_CONIO2\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ \_CONIO2\_H\_}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <conio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifdef\ UNICODE}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\#include\ <windows.h>\ \ \ \ //\ we\ need\ wchar\_t}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50af77fb67151d0c18d397069ad8c271ba3}{BLACK}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a35d6719cb4d7577c031b3d79057a1b79}{BLUE}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50aa60bd322f93178d68184e30e162571ca}{GREEN}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50aafe71cad474c15ce63b300c470eef8cc}{CYAN}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50af80f9a890089d211842d59625e561f88}{RED}},\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a56926c820ad72d0977e7ee44d9916e62}{MAGENTA}},\ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a1fa14482e7e4dc1332ab8c9d995fe570}{BROWN}},\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a3dcbd50f6d434719ddfb9da673977307}{LIGHTGRAY}},\ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a52a9af0edd45f66d37996edcb1ca69f0}{DARKGRAY}},\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a272b71e84bc2640b193e9fe3c72cb3de}{LIGHTBLUE}},\ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a0c9ed06b5de60ddd26bb2808e5f4b5dd}{LIGHTGREEN}},\ \ \ }
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50ac8d7b8737ca95d137a05f3bb8f3d1a17}{LIGHTCYAN}},\ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50af3a6d81d1da6f2134cc3cca6f02b1114}{LIGHTRED}},\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50ae19b6d1fedca830c608811b77bd0affc}{LIGHTMAGENTA}},\ }
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50ae735a848bf82163a19236ead1c3ef2d2}{YELLOW}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50a283fc479650da98250635b9c3c0e7e50}{WHITE}}\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \}\ \mbox{\hyperlink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ cgets\ \_cgets}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ cprintf\ \_cprintf}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ cputs\ \_cputs}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ cscanf\ \_cscanf}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#ifdef\ UNICODE}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ cgetws\ \_cgetws}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ getwch\ \_getwch}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ getwche\ \_getwche}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ putwch\ \_putwch}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ ungetwch\ \_ungetwch}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ cputws\ \_cputws}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ cwprintf\ \_cwprintf}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ cwscanf\ \_cwscanf}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#ifndef\ \_CONIO\_NO\_GETTEXT\_}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ gettext\ \_conio\_gettext}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ ScreenClear\ clrscr}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ \_NOCURSOR\ 0\ \ \ \ \ \ }}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ \_SOLIDCURSOR\ 100\ }}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ \_NORMALCURSOR\ 20\ }}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtext__info}{text\_info}}\ \{}
+\DoxyCodeLine{00086\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structtext__info_af67d5c075198f51c614b60d52685fea3}{curx}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structtext__info_a668e07a7c4f0c4757f31e50fad9d369d}{cury}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{structtext__info_a49deb8b5e028b1b346f3aa718b2be1ad}{attribute}};\ \ \ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{structtext__info_a138130a3447be8ab548d8a6b8b8361d2}{normattr}};\ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structtext__info_a904986139bf309043a97881988dfe0bf}{screenwidth}};\ \ }
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structtext__info_ab7ff1afbd9d922cfe253e29c95567cec}{screenheight}};\ }
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structchar__info}{char\_info}}\ \{}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#ifdef\ UNICODE}}
+\DoxyCodeLine{00106\ \ \ \textcolor{keywordtype}{wchar\_t}\ \mbox{\hyperlink{structchar__info_ac632f0e58c93e01b2bfbb3015c8de34f}{letter}};\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00108\ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structchar__info_ac632f0e58c93e01b2bfbb3015c8de34f}{letter}};\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{structchar__info_add3ba4b027e41df6d301c704fba01f2d}{attr}};\ }
+\DoxyCodeLine{00111\ \};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a7fd1619086574b0cb1ffcbe3a2a6deb7}{gettextinfo}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structtext__info}{text\_info}}\ *info);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a653969cb2397642d47151e6452f371da}{inittextinfo}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a9cb6b43f03a4a9fd0cd27fe49f769254}{clreol}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a209453284e1e2ed32261e11e00d53760}{clrscr}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a884bdb8990c68fb95ce6503990dc7cb6}{delline}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00148\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a39f0fecc320f7b6ed5ae0801d520b95b}{insline}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00163\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a7e947527c3ee15b4098372ad1bfae79c}{\_conio\_gettext}}(\textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ top,\ \textcolor{keywordtype}{int}\ right,\ \textcolor{keywordtype}{int}\ bottom,}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structchar__info}{char\_info}}\ *buf);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00177\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_ac659a12ac9cf321e933bfe6d2ce0f5e8}{puttext}}(\textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ top,\ \textcolor{keywordtype}{int}\ right,\ \textcolor{keywordtype}{int}\ bottom,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structchar__info}{char\_info}}\ *buf);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00188\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a39b9367908e362a41d2fc1c9d3947870}{movetext}}(\textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ top,\ \textcolor{keywordtype}{int}\ right,\ \textcolor{keywordtype}{int}\ bottom,\ \textcolor{keywordtype}{int}\ destleft,}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ desttop);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00196\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00204\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_abaa0bc9d32191dc17d8fb447ae8b13b4}{cputsxy}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ *str);}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00212\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_ac6cce002e6f674023b20e2c22f9a2ca4}{putchxy}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{char}\ ch);}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00219\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_ae261294be6654d6559f5a3d7be282545}{\_setcursortype}}(\textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00225\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a79938d2ba0e5a051d2972b6801c0e57c}{textattr}}(\textcolor{keywordtype}{int}\ \_attr);}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00232\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_ac8ba9d08b4093a6ee1aaef759ba1b174}{normvideo}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00239\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a4fba076b219f45fb4e28c15f86678ec3}{textbackground}}(\textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00246\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_aa35f624d7fe78f2cb3e7eee289180083}{textcolor}}(\textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00252\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{conio2_8h_a8025f3b9544217c4375ddbfe8999fc55}{wherex}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00258\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{conio2_8h_a71fd601ded5451d1ce7091830343d67a}{wherey}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00271\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{conio2_8h_aa098db03de12b3593ffe4b7883f8b038}{getpass}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prompt,\ \textcolor{keywordtype}{char}\ *str);}
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00280\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a1b254703e41c4fbbd5106d5f53c6b5b1}{highvideo}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00289\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a0a75160861656f586e4b91a260d1bbbf}{lowvideo}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00292\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00293\ \textcolor{comment}{\ *\ You\ may\ need\ to\ link\ with\ libmsvcr70.a\ or\ libmsvcr70d.a\ or\ libmsvcr71.a}}
+\DoxyCodeLine{00294\ \textcolor{comment}{\ *\ \ or\ libmsvcr71d.a\ if\ you\ want\ any\ of\ these\ functions.}}
+\DoxyCodeLine{00295\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00296\ \textcolor{preprocessor}{\#ifdef\ UNICODE}}
+\DoxyCodeLine{00297\ \_CRTIMP\ \textcolor{keywordtype}{wchar\_t}\ *\_\_cdecl\ \_cgetws(\textcolor{keywordtype}{wchar\_t}\ *);}
+\DoxyCodeLine{00298\ \_CRTIMP\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \_\_cdecl\ \_getwch(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00299\ \_CRTIMP\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \_\_cdecl\ \_getwche(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00300\ \_CRTIMP\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \_\_cdecl\ \_putwch(\textcolor{keywordtype}{wchar\_t});}
+\DoxyCodeLine{00301\ \_CRTIMP\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \_\_cdecl\ \_ungetwch(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short});}
+\DoxyCodeLine{00302\ \_CRTIMP\ \textcolor{keywordtype}{int}\ \_\_cdecl\ \_cputws(\textcolor{keyword}{const}\ \textcolor{keywordtype}{wchar\_t}\ *);}
+\DoxyCodeLine{00303\ \_CRTIMP\ \textcolor{keywordtype}{int}\ \_\_cdecl\ \_cwprintf(\textcolor{keyword}{const}\ \textcolor{keywordtype}{wchar\_t}\ *,\ ...);}
+\DoxyCodeLine{00304\ \_CRTIMP\ \textcolor{keywordtype}{int}\ \_\_cdecl\ \_cwscanf(\textcolor{keyword}{const}\ \textcolor{keywordtype}{wchar\_t}\ *,\ ...);}
+\DoxyCodeLine{00305\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00313\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_aadc4540eac008b25ebb9ca83a91fe94d}{delay}}(\textcolor{keywordtype}{int}\ ms);}
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00321\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_abcba584d7e802be263184954c1af800a}{switchbackground}}(\textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00331\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a8d079b9b918655900b99cfaa474fcbad}{flashbackground}}(\textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ ms);}
+\DoxyCodeLine{00332\ }
+\DoxyCodeLine{00338\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{conio2_8h_a4cbd0d7ad0172a5198f85d96e3d61400}{clearkeybuf}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00339\ }
+\DoxyCodeLine{00340\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00341\ \}}
+\DoxyCodeLine{00342\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00344\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_CONIO2\_H\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00345\ }
+\DoxyCodeLine{00346\ }
+
+\end{DoxyCode}

@@ -1,0 +1,395 @@
+\doxysection{conio2.\+c File Reference}
+\hypertarget{conio2_8c}{}\label{conio2_8c}\index{conio2.c@{conio2.c}}
+{\ttfamily \#include \"{}conio2.\+h\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{conio2_8c_a7fd1619086574b0cb1ffcbe3a2a6deb7}{gettextinfo}} (struct \mbox{\hyperlink{structtext__info}{text\+\_\+info}} \texorpdfstring{$\ast$}{*}info)
+\item 
+void \mbox{\hyperlink{conio2_8c_a653969cb2397642d47151e6452f371da}{inittextinfo}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a209453284e1e2ed32261e11e00d53760}{clrscr}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a9cb6b43f03a4a9fd0cd27fe49f769254}{clreol}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a884bdb8990c68fb95ce6503990dc7cb6}{delline}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a39f0fecc320f7b6ed5ae0801d520b95b}{insline}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a39b9367908e362a41d2fc1c9d3947870}{movetext}} (int left, int top, int right, int bottom, int destleft, int desttop)
+\item 
+void \mbox{\hyperlink{conio2_8c_a7e947527c3ee15b4098372ad1bfae79c}{\+\_\+conio\+\_\+gettext}} (int left, int top, int right, int bottom, struct \mbox{\hyperlink{structchar__info}{char\+\_\+info}} \texorpdfstring{$\ast$}{*}buf)
+\item 
+void \mbox{\hyperlink{conio2_8c_ac659a12ac9cf321e933bfe6d2ce0f5e8}{puttext}} (int left, int top, int right, int bottom, struct \mbox{\hyperlink{structchar__info}{char\+\_\+info}} \texorpdfstring{$\ast$}{*}buf)
+\item 
+void \mbox{\hyperlink{conio2_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}} (int x, int y)
+\item 
+void \mbox{\hyperlink{conio2_8c_abaa0bc9d32191dc17d8fb447ae8b13b4}{cputsxy}} (int x, int y, char \texorpdfstring{$\ast$}{*}str)
+\item 
+void \mbox{\hyperlink{conio2_8c_ac6cce002e6f674023b20e2c22f9a2ca4}{putchxy}} (int x, int y, char ch)
+\item 
+void \mbox{\hyperlink{conio2_8c_ae261294be6654d6559f5a3d7be282545}{\+\_\+setcursortype}} (int type)
+\item 
+void \mbox{\hyperlink{conio2_8c_a79938d2ba0e5a051d2972b6801c0e57c}{textattr}} (int \+\_\+attr)
+\item 
+void \mbox{\hyperlink{conio2_8c_ac8ba9d08b4093a6ee1aaef759ba1b174}{normvideo}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a4fba076b219f45fb4e28c15f86678ec3}{textbackground}} (int color)
+\item 
+void \mbox{\hyperlink{conio2_8c_aa35f624d7fe78f2cb3e7eee289180083}{textcolor}} (int color)
+\item 
+int \mbox{\hyperlink{conio2_8c_a8025f3b9544217c4375ddbfe8999fc55}{wherex}} (void)
+\item 
+int \mbox{\hyperlink{conio2_8c_a71fd601ded5451d1ce7091830343d67a}{wherey}} (void)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{conio2_8c_aa098db03de12b3593ffe4b7883f8b038}{getpass}} (const char \texorpdfstring{$\ast$}{*}prompt, char \texorpdfstring{$\ast$}{*}str)
+\item 
+void \mbox{\hyperlink{conio2_8c_a1b254703e41c4fbbd5106d5f53c6b5b1}{highvideo}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_a0a75160861656f586e4b91a260d1bbbf}{lowvideo}} (void)
+\item 
+void \mbox{\hyperlink{conio2_8c_aadc4540eac008b25ebb9ca83a91fe94d}{delay}} (int ms)
+\item 
+void \mbox{\hyperlink{conio2_8c_abcba584d7e802be263184954c1af800a}{switchbackground}} (int color)
+\item 
+void \mbox{\hyperlink{conio2_8c_a8d079b9b918655900b99cfaa474fcbad}{flashbackground}} (int color, int ms)
+\item 
+void \mbox{\hyperlink{conio2_8c_a4cbd0d7ad0172a5198f85d96e3d61400}{clearkeybuf}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{conio2_8c_a7e947527c3ee15b4098372ad1bfae79c}\label{conio2_8c_a7e947527c3ee15b4098372ad1bfae79c} 
+\index{conio2.c@{conio2.c}!\_conio\_gettext@{\_conio\_gettext}}
+\index{\_conio\_gettext@{\_conio\_gettext}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{\_conio\_gettext()}{\_conio\_gettext()}}
+{\footnotesize\ttfamily void \+\_\+conio\+\_\+gettext (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{top,  }\item[{int}]{right,  }\item[{int}]{bottom,  }\item[{struct \mbox{\hyperlink{structchar__info}{char\+\_\+info}} \texorpdfstring{$\ast$}{*}}]{buf }\end{DoxyParamCaption})}
+
+Gets text from the screen. If you haven\textquotesingle{}t defined {\ttfamily {\itshape CONIO\+\_\+\+NO\+\_\+\+GETTEXT}} prior to including {\ttfamily \doxylink{conio2_8h}{conio2.\+h}} you can use this function also under the {\ttfamily gettext} name. \begin{DoxySeeAlso}{See also}
+\doxylink{structchar__info}{char\+\_\+info} 
+
+\doxylink{conio2_8h_ac659a12ac9cf321e933bfe6d2ce0f5e8}{puttext} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em top} & Top coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em right} & Right coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em bottom} & Bottom coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em buf} & You have to pass buffer of size {\ttfamily (right -\/ left + 1) \texorpdfstring{$\ast$}{*} (bottom -\/ top + 1) \texorpdfstring{$\ast$}{*} sizeof(char\+\_\+info)}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_ae261294be6654d6559f5a3d7be282545}\label{conio2_8c_ae261294be6654d6559f5a3d7be282545} 
+\index{conio2.c@{conio2.c}!\_setcursortype@{\_setcursortype}}
+\index{\_setcursortype@{\_setcursortype}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{\_setcursortype()}{\_setcursortype()}}
+{\footnotesize\ttfamily void \+\_\+setcursortype (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+Sets the cursor type. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_cursortypes}{cursortypes} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & cursor type, under Win32 it is height of the cursor in percents \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_a4cbd0d7ad0172a5198f85d96e3d61400}\label{conio2_8c_a4cbd0d7ad0172a5198f85d96e3d61400} 
+\index{conio2.c@{conio2.c}!clearkeybuf@{clearkeybuf}}
+\index{clearkeybuf@{clearkeybuf}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{clearkeybuf()}{clearkeybuf()}}
+{\footnotesize\ttfamily void clearkeybuf (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Clears the keyboard buffer. To see it in effect run {\ttfamily conio\+\_\+test} and try to press a key during the \textquotesingle{}Flashing...\textquotesingle{} phase. \Hypertarget{conio2_8c_a9cb6b43f03a4a9fd0cd27fe49f769254}\label{conio2_8c_a9cb6b43f03a4a9fd0cd27fe49f769254} 
+\index{conio2.c@{conio2.c}!clreol@{clreol}}
+\index{clreol@{clreol}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{clreol()}{clreol()}}
+{\footnotesize\ttfamily void clreol (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Clears rest of the line from cursor position to the end of line without moving the cursor. \Hypertarget{conio2_8c_a209453284e1e2ed32261e11e00d53760}\label{conio2_8c_a209453284e1e2ed32261e11e00d53760} 
+\index{conio2.c@{conio2.c}!clrscr@{clrscr}}
+\index{clrscr@{clrscr}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{clrscr()}{clrscr()}}
+{\footnotesize\ttfamily void clrscr (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Clears whole screen. \Hypertarget{conio2_8c_abaa0bc9d32191dc17d8fb447ae8b13b4}\label{conio2_8c_abaa0bc9d32191dc17d8fb447ae8b13b4} 
+\index{conio2.c@{conio2.c}!cputsxy@{cputsxy}}
+\index{cputsxy@{cputsxy}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{cputsxy()}{cputsxy()}}
+{\footnotesize\ttfamily void cputsxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+Puts string at the specified position. 
+\begin{DoxyParams}{Parameters}
+{\em x} & horizontal position \\
+\hline
+{\em y} & vertical position \\
+\hline
+{\em str} & string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_aadc4540eac008b25ebb9ca83a91fe94d}\label{conio2_8c_aadc4540eac008b25ebb9ca83a91fe94d} 
+\index{conio2.c@{conio2.c}!delay@{delay}}
+\index{delay@{delay}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void delay (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})}
+
+Pauses program execution for a given time. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_abcba584d7e802be263184954c1af800a}{switchbackground} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em ms} & miliseconds \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_a884bdb8990c68fb95ce6503990dc7cb6}\label{conio2_8c_a884bdb8990c68fb95ce6503990dc7cb6} 
+\index{conio2.c@{conio2.c}!delline@{delline}}
+\index{delline@{delline}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{delline()}{delline()}}
+{\footnotesize\ttfamily void delline (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Delete the current line (line on which is cursor) and then moves all lines below one line up. Lines below the line are moved one line up. \Hypertarget{conio2_8c_a8d079b9b918655900b99cfaa474fcbad}\label{conio2_8c_a8d079b9b918655900b99cfaa474fcbad} 
+\index{conio2.c@{conio2.c}!flashbackground@{flashbackground}}
+\index{flashbackground@{flashbackground}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{flashbackground()}{flashbackground()}}
+{\footnotesize\ttfamily void flashbackground (\begin{DoxyParamCaption}\item[{int}]{color,  }\item[{int}]{ms }\end{DoxyParamCaption})}
+
+Changes background color for a given time and then it restores it back. You can use it for visual bell. Does not modify \doxylink{conio2_8h_a4fba076b219f45fb4e28c15f86678ec3}{textbackground()}. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_abcba584d7e802be263184954c1af800a}{switchbackground} 
+
+\doxylink{conio2_8h_aadc4540eac008b25ebb9ca83a91fe94d}{delay} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em color} & background color \\
+\hline
+{\em ms} & miliseconds \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_aa098db03de12b3593ffe4b7883f8b038}\label{conio2_8c_aa098db03de12b3593ffe4b7883f8b038} 
+\index{conio2.c@{conio2.c}!getpass@{getpass}}
+\index{getpass@{getpass}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{getpass()}{getpass()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} getpass (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{prompt,  }\item[{char \texorpdfstring{$\ast$}{*}}]{str }\end{DoxyParamCaption})}
+
+Reads password. This function behaves like cgets.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_a2c1d5de4bbf9e5b8d7ba835e7601a77f}{cgets} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & prompt which will be displayed to user \\
+\hline
+{\em str} & string for the password. {\ttfamily str\mbox{[}0\mbox{]}} have to contain length of the {\ttfamily str} -\/ 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily \&str\mbox{[}2\mbox{]}}, the password will be stored in {\ttfamily str} beginning at {\ttfamily str\mbox{[}2\mbox{]}}, in {\ttfamily str\mbox{[}1\mbox{]}} will be length of the string without {\ttfamily \textbackslash{}0}, at {\ttfamily str\mbox{[}2 + str\mbox{[}1\mbox{]}\mbox{]}} will be \textbackslash{}0. 
+\end{DoxyReturn}
+\Hypertarget{conio2_8c_a7fd1619086574b0cb1ffcbe3a2a6deb7}\label{conio2_8c_a7fd1619086574b0cb1ffcbe3a2a6deb7} 
+\index{conio2.c@{conio2.c}!gettextinfo@{gettextinfo}}
+\index{gettextinfo@{gettextinfo}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{gettextinfo()}{gettextinfo()}}
+{\footnotesize\ttfamily void gettextinfo (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structtext__info}{text\+\_\+info}} \texorpdfstring{$\ast$}{*}}]{info }\end{DoxyParamCaption})}
+
+Returns information of the screen. \begin{DoxySeeAlso}{See also}
+\doxylink{structtext__info}{text\+\_\+info} 
+\end{DoxySeeAlso}
+\Hypertarget{conio2_8c_ae824443b3f661414ba1f2718e17fe97d}\label{conio2_8c_ae824443b3f661414ba1f2718e17fe97d} 
+\index{conio2.c@{conio2.c}!gotoxy@{gotoxy}}
+\index{gotoxy@{gotoxy}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{gotoxy()}{gotoxy()}}
+{\footnotesize\ttfamily void gotoxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Moves cursor to the specified position. 
+\begin{DoxyParams}{Parameters}
+{\em x} & horizontal position \\
+\hline
+{\em y} & vertical position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_a1b254703e41c4fbbd5106d5f53c6b5b1}\label{conio2_8c_a1b254703e41c4fbbd5106d5f53c6b5b1} 
+\index{conio2.c@{conio2.c}!highvideo@{highvideo}}
+\index{highvideo@{highvideo}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{highvideo()}{highvideo()}}
+{\footnotesize\ttfamily void highvideo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Makes foreground colors light. If the current foreground color is less than {\ttfamily DARKGRAY} adds 8 to the its value making dark colors light. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS} 
+
+\doxylink{conio2_8h_a0a75160861656f586e4b91a260d1bbbf}{lowvideo} 
+\end{DoxySeeAlso}
+\Hypertarget{conio2_8c_a653969cb2397642d47151e6452f371da}\label{conio2_8c_a653969cb2397642d47151e6452f371da} 
+\index{conio2.c@{conio2.c}!inittextinfo@{inittextinfo}}
+\index{inittextinfo@{inittextinfo}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{inittextinfo()}{inittextinfo()}}
+{\footnotesize\ttfamily void inittextinfo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Call this if you need real value of normattr attribute in the \doxylink{structtext__info}{text\+\_\+info} structure. \begin{DoxySeeAlso}{See also}
+\doxylink{structtext__info}{text\+\_\+info} 
+\end{DoxySeeAlso}
+\Hypertarget{conio2_8c_a39f0fecc320f7b6ed5ae0801d520b95b}\label{conio2_8c_a39f0fecc320f7b6ed5ae0801d520b95b} 
+\index{conio2.c@{conio2.c}!insline@{insline}}
+\index{insline@{insline}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{insline()}{insline()}}
+{\footnotesize\ttfamily void insline (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Insert blank line at the cursor position. Original content of the line and content of lines below moves one line down. The last line is deleted. \Hypertarget{conio2_8c_a0a75160861656f586e4b91a260d1bbbf}\label{conio2_8c_a0a75160861656f586e4b91a260d1bbbf} 
+\index{conio2.c@{conio2.c}!lowvideo@{lowvideo}}
+\index{lowvideo@{lowvideo}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{lowvideo()}{lowvideo()}}
+{\footnotesize\ttfamily void lowvideo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Makes foreground colors dark. If the current foreground color is higher than {\ttfamily LIGHTGRAY} substracts 8 from its value making light colors dark. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS} 
+
+\doxylink{conio2_8h_a1b254703e41c4fbbd5106d5f53c6b5b1}{highvideo} 
+\end{DoxySeeAlso}
+\Hypertarget{conio2_8c_a39b9367908e362a41d2fc1c9d3947870}\label{conio2_8c_a39b9367908e362a41d2fc1c9d3947870} 
+\index{conio2.c@{conio2.c}!movetext@{movetext}}
+\index{movetext@{movetext}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{movetext()}{movetext()}}
+{\footnotesize\ttfamily void movetext (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{top,  }\item[{int}]{right,  }\item[{int}]{bottom,  }\item[{int}]{destleft,  }\item[{int}]{desttop }\end{DoxyParamCaption})}
+
+Copies text. 
+\begin{DoxyParams}{Parameters}
+{\em left} & Left coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em top} & Top coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em right} & Right coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em bottom} & Bottom coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em destleft} & Left coordinate of the destination rectangle. \\
+\hline
+{\em desttop} & Top coordinate of the destination rectangle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_ac8ba9d08b4093a6ee1aaef759ba1b174}\label{conio2_8c_ac8ba9d08b4093a6ee1aaef759ba1b174} 
+\index{conio2.c@{conio2.c}!normvideo@{normvideo}}
+\index{normvideo@{normvideo}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{normvideo()}{normvideo()}}
+{\footnotesize\ttfamily void normvideo (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Sets text attribute back to value it had after program start. It uses \doxylink{structtext__info}{text\+\_\+info}\textquotesingle{}s normattr value. \begin{DoxySeeAlso}{See also}
+\doxylink{structtext__info}{text\+\_\+info} 
+\end{DoxySeeAlso}
+\Hypertarget{conio2_8c_ac6cce002e6f674023b20e2c22f9a2ca4}\label{conio2_8c_ac6cce002e6f674023b20e2c22f9a2ca4} 
+\index{conio2.c@{conio2.c}!putchxy@{putchxy}}
+\index{putchxy@{putchxy}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{putchxy()}{putchxy()}}
+{\footnotesize\ttfamily void putchxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{ch }\end{DoxyParamCaption})}
+
+Puts char at the specified position. 
+\begin{DoxyParams}{Parameters}
+{\em x} & horizontal position \\
+\hline
+{\em y} & vertical position \\
+\hline
+{\em ch} & char \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_ac659a12ac9cf321e933bfe6d2ce0f5e8}\label{conio2_8c_ac659a12ac9cf321e933bfe6d2ce0f5e8} 
+\index{conio2.c@{conio2.c}!puttext@{puttext}}
+\index{puttext@{puttext}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{puttext()}{puttext()}}
+{\footnotesize\ttfamily void puttext (\begin{DoxyParamCaption}\item[{int}]{left,  }\item[{int}]{top,  }\item[{int}]{right,  }\item[{int}]{bottom,  }\item[{struct \mbox{\hyperlink{structchar__info}{char\+\_\+info}} \texorpdfstring{$\ast$}{*}}]{buf }\end{DoxyParamCaption})}
+
+Puts text back to the screen. \begin{DoxySeeAlso}{See also}
+\doxylink{structchar__info}{char\+\_\+info} 
+
+\doxylink{conio2_8h_a7e947527c3ee15b4098372ad1bfae79c}{\+\_\+conio\+\_\+gettext} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em top} & Top coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em right} & Right coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em bottom} & Bottom coordinate of the rectangle, inclusive, starting from 1. \\
+\hline
+{\em buf} & You have to pass buffer of size {\ttfamily (right -\/ left + 1) \texorpdfstring{$\ast$}{*} (bottom -\/ top + 1) \texorpdfstring{$\ast$}{*} sizeof(char\+\_\+info)}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_abcba584d7e802be263184954c1af800a}\label{conio2_8c_abcba584d7e802be263184954c1af800a} 
+\index{conio2.c@{conio2.c}!switchbackground@{switchbackground}}
+\index{switchbackground@{switchbackground}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{switchbackground()}{switchbackground()}}
+{\footnotesize\ttfamily void switchbackground (\begin{DoxyParamCaption}\item[{int}]{color }\end{DoxyParamCaption})}
+
+Replaces background color in the whole window. The text however is left intact. Does not modify \doxylink{conio2_8h_a4fba076b219f45fb4e28c15f86678ec3}{textbackground()}. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_a8d079b9b918655900b99cfaa474fcbad}{flashbackground} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em color} & background color \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_a79938d2ba0e5a051d2972b6801c0e57c}\label{conio2_8c_a79938d2ba0e5a051d2972b6801c0e57c} 
+\index{conio2.c@{conio2.c}!textattr@{textattr}}
+\index{textattr@{textattr}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{textattr()}{textattr()}}
+{\footnotesize\ttfamily void textattr (\begin{DoxyParamCaption}\item[{int}]{\+\_\+attr }\end{DoxyParamCaption})}
+
+Sets attribute of text. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+attr} & new text attribute \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_a4fba076b219f45fb4e28c15f86678ec3}\label{conio2_8c_a4fba076b219f45fb4e28c15f86678ec3} 
+\index{conio2.c@{conio2.c}!textbackground@{textbackground}}
+\index{textbackground@{textbackground}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{textbackground()}{textbackground()}}
+{\footnotesize\ttfamily void textbackground (\begin{DoxyParamCaption}\item[{int}]{color }\end{DoxyParamCaption})}
+
+Sets text background color. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em color} & new background color \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_aa35f624d7fe78f2cb3e7eee289180083}\label{conio2_8c_aa35f624d7fe78f2cb3e7eee289180083} 
+\index{conio2.c@{conio2.c}!textcolor@{textcolor}}
+\index{textcolor@{textcolor}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{textcolor()}{textcolor()}}
+{\footnotesize\ttfamily void textcolor (\begin{DoxyParamCaption}\item[{int}]{color }\end{DoxyParamCaption})}
+
+Sets text foreground color. \begin{DoxySeeAlso}{See also}
+\doxylink{conio2_8h_ab983350d6d1201c0ebd709320e7a0d50}{COLORS} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em color} & new foreground color \\
+\hline
+\end{DoxyParams}
+\Hypertarget{conio2_8c_a8025f3b9544217c4375ddbfe8999fc55}\label{conio2_8c_a8025f3b9544217c4375ddbfe8999fc55} 
+\index{conio2.c@{conio2.c}!wherex@{wherex}}
+\index{wherex@{wherex}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{wherex()}{wherex()}}
+{\footnotesize\ttfamily int wherex (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Reads the cursor X position. \begin{DoxyReturn}{Returns}
+cursor X position 
+\end{DoxyReturn}
+\Hypertarget{conio2_8c_a71fd601ded5451d1ce7091830343d67a}\label{conio2_8c_a71fd601ded5451d1ce7091830343d67a} 
+\index{conio2.c@{conio2.c}!wherey@{wherey}}
+\index{wherey@{wherey}!conio2.c@{conio2.c}}
+\doxysubsubsection{\texorpdfstring{wherey()}{wherey()}}
+{\footnotesize\ttfamily int wherey (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Reads the cursor Y position. \begin{DoxyReturn}{Returns}
+cursor Y position 
+\end{DoxyReturn}
